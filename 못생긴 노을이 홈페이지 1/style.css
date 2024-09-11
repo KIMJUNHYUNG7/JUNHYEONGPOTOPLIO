@@ -1,0 +1,412 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+   margin: 0;
+   padding: 0;
+   text-decoration: none;
+}
+
+ul,
+li,
+a,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #333;
+    list-style: none;
+
+
+}
+
+button {    
+    border: none;
+    background-color: unset;
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    width: 100%;
+    position: fixed;
+    z-index: 5;
+
+}
+
+.top_nav {
+    max-width: 1300px;
+    margin: auto;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+.LOGO {
+    max-width: 60px;
+    cursor: pointer;
+}
+
+.menu{
+    width: 200px;
+    height: 0px;   
+    overflow: hidden;
+    transition: height 0.7s;
+    
+}
+
+.menu li{
+    /* height: 25px; */
+    margin-bottom: 10px;
+}
+
+.menu li:nth-child(1){
+    margin-top: 10px;
+}
+
+.show_menu{
+    height: 100px;
+
+        /* transform: translateX(); */
+
+}
+
+.mainvideo{
+    display: none;
+}
+
+
+.main1_img {
+    height: 100vh;
+    position: relative;
+    background-color: #E5DDB9;
+}
+
+.main1_img img{
+    object-fit: cover;
+    height: 100%;
+}
+.main1_text {
+    margin: auto;
+    max-width: 1500px;
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    white-space: pre-line;
+    /* font-size: 1em; */
+    font-weight: 450;
+
+}
+
+.main1_text_T{
+    cursor: default;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.main1_text_ST{
+    font-size: 1.5em;
+    cursor: default;
+    font-weight: 550;
+}
+.main1_textwrap{
+    font-size: 1.25em;
+}
+
+.main_warp{
+    max-width: 1300px;
+    margin: auto;
+}
+
+
+
+.bannner>a>img{
+    margin-top: 150px;
+
+}
+
+.carousel-glid{
+    position: relative;
+    /* margin: auto; */
+    /* width: 1500px; */
+    
+}
+.carousel_container{
+    max-width: 1050px;;
+    overflow: hidden;
+    margin: auto;
+    /* margin: 150px auto; */
+    /* align-items: self-end; */
+}
+
+.carousel-wrapper{
+    justify-content: space-between;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    transition: transform 0.5s ease-in-out; 
+    margin-top: 150px;
+}
+
+.Goods{
+    width: 300px;
+    height: auto;
+    margin-right: 25px;
+    margin-left: 25px;
+}
+
+
+.btn_box {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%); /* 버튼을 수직 가운데 정렬 */
+}
+
+.btn_box button {
+    /* background-color: rgba(255, 255, 255, 0.7); 버튼의 배경을 반투명으로 설정 */
+    border: none;
+    cursor: pointer;
+    z-index: 10; /* 이미지 위에 버튼이 표시되도록 z-index 설정 */
+    padding: 10px;
+    border-radius: 50%; /* 버튼 모양을 둥글게 */
+    transition: background-color 0.3s ease;
+}
+
+.btn_box button img {
+    display: block;
+}
+
+
+
+.book{
+    box-sizing: border-box;
+    padding: 0px 220px;
+    margin-top: 150px;
+
+}
+
+.book>img{
+    align-items: center;
+    
+}
+
+.Greetings{
+    box-sizing: border-box;
+    padding-top: 150px;
+    text-align: center;
+    max-width: 890px;
+    margin: auto;
+    white-space: pre-line;
+
+}
+
+
+ 
+.footer_BG{
+    margin-top: 120px;
+    width: 100%;
+    /* background-color: #010101; */
+}
+.footer_wrap{
+    font-size: 1em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.footer_left_container{
+    float: left;
+}
+
+.footer_left_container>div{
+    margin-bottom: 30px;
+    
+}
+
+
+
+.footer_left_container a{
+    display: table-cell;
+    vertical-align: middle;
+    align-items: center;
+    /* line-height: 20px; */
+}
+
+.footer_left_container img, p{
+    float: left;
+}
+
+.footer_left_container p{
+    margin-left: 10px;
+}
+
+.footer_left_container>div:nth-child(1){
+    width: fit-content;
+    font-weight: 600;
+    border-bottom: 1px solid #111; 
+    margin-bottom: 50px;
+}
+
+.footer_right_container{
+    float: right;
+    width: 300px;
+    align-items: end;
+    box-sizing: border-box;
+    padding-top: 50px;
+
+}
+
+@media all and (max-width:1024px){ 
+    .top_nav{
+        max-width: 700px;
+    }
+
+    .main1_text_T{
+        font-size: 1.75em;
+    }
+
+    .main1_text_ST{
+        font-size: 1.5em;
+    }
+
+    .carousel-glid{
+        width: 700px;
+        margin: auto;
+    }
+
+    .carousel_container{
+        max-width: 600px;
+        margin: auto;
+    }
+
+    .Goods{
+        width: 150px;
+    }
+
+    .btn_box{
+        top: 70%;
+    }
+
+    .btn_box img{
+        width: 45px;
+    }
+
+    .book{
+        padding: 0px 110px;
+    }
+
+    
+  } 
+
+  @media all and (max-width:767px){
+
+
+    
+    .top_nav{
+        
+        background-color: rgba(255, 255, 255, 0.7);
+        width: 100%;
+    }
+
+    
+
+    .menu>a li{
+        width: fit-content;
+        text-align: center;
+    }
+    
+    .main1_img{
+        display: none;
+    }   
+    .mainvideo{
+        padding-top: 60px;
+        /* margin-top: 60px; */
+        display: block;
+    }
+
+
+    .carousel-glid{
+        width: 350px;
+        margin: auto;
+    }
+
+    .carousel-wrapper{
+        margin-top: 50px;
+    }
+
+    .carousel_container{
+        max-width: 300px;
+        margin: auto;
+    }
+
+    .Goods{
+        width: 50px;
+    }
+
+    .btn_box{
+        top: 70%;
+    }
+
+    .btn_box img{
+        width: 20px;
+    }
+
+    .btn_box{
+        top: 70%;
+    }
+
+    .bannner>a img{
+        margin-top: 20px;
+    }
+
+    .book{
+        padding: 0px 50px;
+        margin-top: 50px;
+    }
+    .Greetings{
+        padding-top: 50px;
+        font-size: 0.525em;
+    }
+
+    .footer_wrap{
+        float: none;
+        font-size: 0.725em;
+        max-width: 800px;
+        margin: auto;
+    }
+    .footer_left_container{
+        width: 100%;
+        float: none;
+    }.footer_left_container>div:nth-child(1){
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+    .footer_left_container>div{
+        width: fit-content;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .footer_right_container{
+        float: none;
+        box-sizing: border-box;
+        padding: 0px;
+        width: 300px;
+        margin: auto;
+        margin-top: 50px;
+    
+    }
+}
