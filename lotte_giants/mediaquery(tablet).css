@@ -1,0 +1,283 @@
+@media all and (min-width:1024px) and (max-width:1279px){
+    .main_video1{
+        display: block;
+    }
+    
+    .carousel_box{
+        display: none;
+    }
+
+
+    .highlight_container{
+        width: 700px;
+        margin: auto;
+    }
+    .highlight_btn_box{
+        width: 900px;
+        z-index: 50;
+    }
+
+    .highlight_box,
+    .schedule_box,
+    .text{
+        width: 700px;
+        margin: auto;
+    }
+
+    .schedule_container{
+        width: 700px;
+        margin: auto;
+    }
+
+    .page3_wrap{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        margin: auto;
+        position: relative;
+    }
+
+    .page3_wrap>div:nth-child(1){
+        position: absolute;
+        top: 20%;
+        left: 15%;
+        
+        transform: translateY(-50%);
+    }
+    .page3_wrap>div:nth-child(2){
+        position: absolute;
+        top: 20%;
+        right: 15%;
+        transform: translateY(-50%);
+    }
+    
+    
+    .page3_card_big{
+        float: left;
+        
+    }
+
+    .page3_card_container>div:nth-child(1){
+        position: absolute;
+        top: 70%;
+        left: 15%;
+        transform: translateY(-50%);
+    }
+    .page3_card_container>div:nth-child(2){
+        position: absolute;
+        top: 70%;
+        right: 15%;
+        transform: translateY(-50%);
+    }
+    
+    
+    .page3_card_container{
+        margin-top: 0;
+    }
+
+    .advertisement{
+        width: 800px;
+    }
+
+    .footer_container{
+        max-width: 1000px;
+        font-size: 0.8461525em;
+
+    }
+
+
+    .advertisement{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    .spawn{
+        width: 100%;
+
+    }
+    .spawn_wrap{
+        /* display: flex; */
+        /* justify-content: space-between; */
+        width: 900px;
+        overflow: hidden;
+    }
+    .spawn_box{
+        width: fit-content;
+        display: flex;
+
+    }
+
+    .spawn_btn{
+        width: 1000px;
+    }
+    
+}
+@media all and (min-width:768px) and (max-width:1023px){
+    
+    .main_video1{
+        display: block;
+    }
+
+    .highlight_container{
+        width: 700px;
+        margin: auto;
+    }
+    .highlight_btn_box{
+        width: 769px;
+        z-index: 50;
+    }
+    .highlight_btn_box img{
+        width: 24px;
+    }
+    
+    .highlight_box,
+    .schedule_box,
+    .text{
+        width: 700px;
+        margin: auto;
+    }
+    
+    .schedule_container{
+        width: 700px;
+        margin: auto;
+    }
+    
+    .page3_wrap{
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        margin: auto;
+        position: relative;
+    }
+    
+    .page3_wrap>div:nth-child(1){
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        width: 300px;
+        transform: translateY(-50%);
+        padding: 10px;
+    }
+    .page3_wrap>div:nth-child(2){
+        position: absolute;
+        padding: 10px;
+        width: 300px;
+        top: 20%;
+        right: 10%;
+        transform: translateY(-50%);
+    }
+
+    .page3_card_big img{
+        width: 280px;
+    }
+
+    .card_title img{
+        width: 24px;
+    }
+    
+    
+    .page3_card_big{
+        float: left;
+        
+    }
+    
+    .page3_card_container>div:nth-child(1){
+        position: absolute;
+        top: 70%;
+        left: 10%;
+        transform: translateY(-50%);
+        width: 300px;
+    }
+    .page3_card_container>div:nth-child(2){
+        position: absolute;
+        top: 70%;
+        right: 10%;
+        transform: translateY(-50%);
+        width: 300px;
+    }
+    
+    
+    .page3_card_container{
+        margin-top: 0;
+    }
+
+    .page3_card_small img{
+        width: 160px;
+    }
+
+    .card_title img{
+        width: 24px;
+    }
+    
+    .uniform{
+        width: 160px;
+        margin-top: 30px;
+    }
+    
+    .advertisement{
+        /* width: 250px; */
+        max-width: 700px;
+        margin: auto;
+        
+    }
+
+    .advertisement_card{
+        width: 200px;
+    }
+
+    .advertisement img{
+        width: 200px;
+    }
+    
+    .footer_container{
+        max-width: 700px;
+        font-size: 0.8461525em;
+    
+    }
+
+    footer>.footer_container>.left_box div {
+
+        float: left;
+        margin-top: 5px;
+        margin-right: 20px;
+      }
+    
+    
+    .advertisement{
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+    
+    .spawn{
+        width: 100%;
+    
+    }
+    .spawn_wrap{
+        /* display: flex; */
+        /* justify-content: space-between; */
+        width: 650px;
+    }
+    .spawn_box{
+        overflow: hidden;
+        width: fit-content;
+        display: flex;
+        justify-content: space-between;
+    
+    }
+
+    .spawn_slide{
+        display: block;
+    }
+
+    .spawn_box img{
+        width: 195px;
+        z-index: 1;
+    }
+    
+    .spawn_btn{
+        width: 90%;
+    }
+
+
+
+}

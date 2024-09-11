@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .carousel-container {
+        width: 100%;
+        height: 100%;
+        /* 고정 높이 */
+        overflow: hidden;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease;
+    }
+
+    .carousel-image {
+        flex-shrink: 0;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+
+<body>
+    <div class="carousel-container">
+        <div class="carousel">
+            <img src="img/carousel/롯데자이언츠 메인 1 1.png" alt="Image 1" class="carousel-image">
+            <img src="img/carousel/롯데자이언츠 메인 1-1 1.png" alt="Image 2" class="carousel-image">
+            <img src="img/carousel/롯데자이언츠 메인 2 2.png" alt="Image 3" class="carousel-image">
+        </div>
+    </div>
+    <script>
+        function resizeCarousel() {
+            const container = document.querySelector('.carousel-container');
+            const images = document.querySelectorAll('.carousel-image');
+            const containerWidth = container.offsetWidth;
+            const containerHeight = container.offsetHeight;
+
+            images.forEach(image => {
+                const imgAspectRatio = image.naturalWidth / image.naturalHeight;
+                const containerAspectRatio = containerWidth / containerHeight;
+
+                if (imgAspectRatio > containerAspectRatio) {
+                    // 이미지가 컨테이너보다 더 넓은 경우
+                    image.style.width = '100%';
+                    image.style.height = 'auto';
+                } else {
+                    // 이미지가 컨테이너보다 더 높은 경우
+                    image.style.width = 'auto';
+                    image.style.height = '100%';
+                }
+            });
+        }
+
+        // 초기 로드 시 실행
+        resizeCarousel();
+
+        // 창 크기가 변경될 때마다 실행
+        window.addEventListener('resize', resizeCarousel);
+    </script>
+</body>
+
+</html>

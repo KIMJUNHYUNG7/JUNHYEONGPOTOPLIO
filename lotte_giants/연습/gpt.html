@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>네비게이션바</title>
+    <style>
+        /* 기본 스타일 */
+        .nav_bg {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+
+        .nav_box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .menu ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu ul a {
+            text-decoration: none;
+            color: white;
+            margin-right: 20px;
+        }
+
+        .menu ul li {
+            position: relative;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .Search_box {
+            display: flex;
+            align-items: center;
+        }
+
+        .Search_box input[type="text"] {
+            padding: 5px;
+        }
+
+        .login button {
+            padding: 5px 10px;
+        }
+
+        /* 드롭다운 메뉴 스타일 */
+        .menu_category {
+            position: absolute;
+            background-color: #444;
+            color: white;
+            width: 200px;
+            overflow: hidden;
+            height: 0;
+            transition: height 0.3s ease;
+            z-index: 10;
+        }
+
+        .menu_category ul {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .menu_category ul li {
+            padding: 8px 10px;
+            cursor: pointer;
+        }
+
+        .menu_category ul li:hover {
+            background-color: #555;
+        }
+
+        /* 드롭다운 박스의 위치 */
+        .menu > ul > li:hover .menu_category {
+            height: auto;
+            max-height: 300px; /* 높이 제한 설정 */
+        }
+
+        .nav_box {
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_bg">
+            <div class="nav_box">
+                <div class="logo">
+                    <img src="img/lotte giants.png" alt="롯데 자이언츠">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>경기일정
+                            <div class="menu_category">
+                                <ul>
+                                    <li>경기일정</li>
+                                    <li>경기결과</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>경기정보
+                            <div class="menu_category">
+                                <ul>
+                                    <li>남은경기</li>
+                                    <li>이전경기</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>선수단
+                            <div class="menu_category">
+                                <ul>
+                                    <li>감독</li>
+                                    <li>스탭</li>
+                                    <li>코치</li>
+                                    <li>투수</li>
+                                    <li>포수</li>
+                                    <li>내야수</li>
+                                    <li>외야수</li>
+                                    <li>후보선수</li>
+                                    <li>전체선수</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>이벤트
+                            <div class="menu_category">
+                                <ul>
+                                    <li>EVET</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>미디어
+                            <div class="menu_category">
+                                <ul>
+                                    <li>자이언츠 뉴스</li>
+                                    <li>자이언츠 포토</li>
+                                    <li>자이언츠 인스타그램</li>
+                                    <li>자이언츠 유튜브</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>티켓
+                            <div class="menu_category">
+                                <ul>
+                                    <li>티켓예매</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>기록실
+                            <div class="menu_category">
+                                <ul>
+                                    <li>팀기록</li>
+                                    <li>선수기록</li>
+                                    <li>역대기록</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li>팬
+                            <div class="menu_category">
+                                <ul>
+                                    <li>팬게시판</li>
+                                    <li>응원단</li>
+                                    <li>응원가</li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Search_box">
+                    <div>
+                        <input type="text">
+                    </div>
+                    <div>
+                        <span class="material-symbols-outlined">search</span>
+                    </div>
+                </div>
+                <div class="login">
+                    <div>
+                        <button type="button" class="btn btn-danger">로그인</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+</html>

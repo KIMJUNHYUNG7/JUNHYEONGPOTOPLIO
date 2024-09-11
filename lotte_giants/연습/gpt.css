@@ -1,0 +1,68 @@
+/* 기본 스타일 */
+nav {
+    background-color: #fff;
+    padding: 10px 0;
+    position: relative; /* 상대 위치 지정 */
+}
+
+.nav_box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative; /* 상대 위치 지정 */
+}
+
+.menu {
+    display: flex; /* 가로로 정렬 */
+}
+
+.menu ul {
+    list-style-type: none; /* 기본 목록 스타일 제거 */
+    padding: 0;
+    margin: 0;
+    display: flex; /* 가로로 정렬 */
+}
+
+.menu-item {
+    position: relative;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+/* 전체 서브메뉴 박스 숨기기 */
+.submenu-container {
+    display: none; /* 초기에는 숨김 */
+    position: absolute;
+    top: 100%; /* 메뉴 바로 아래에 위치 */
+    left: 0;
+    background-color: white;
+    width: 100%; /* 메뉴 폭에 맞춤 */
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* 메뉴가 다른 요소 위에 표시되도록 설정 */
+    padding: 10px 0; /* 서브 메뉴 안쪽 여백 */
+}
+
+.submenu-list {
+    display: flex;
+    justify-content: space-around; /* 메뉴 아이템 간격 조정 */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.submenu-list li {
+    display: flex; /* 세로 정렬을 위해 플렉스 사용 */
+    flex-direction: column; /* 서브 메뉴 아이템을 세로로 정렬 */
+    padding: 0 20px;
+    white-space: nowrap; /* 텍스트 줄바꿈 방지 */
+}
+
+.submenu-list li:hover {
+    background-color: #f4f4f4;
+}
+
+/* 호버 효과: 메뉴 항목에 마우스를 올리면 서브메뉴 컨테이너 보이기 */
+.menu-item:hover ~ .submenu-container {
+    display: block; /* 메뉴에 마우스를 올리면 전체 서브메뉴 박스 표시 */
+}

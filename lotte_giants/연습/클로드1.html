@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>롯데 자이언츠</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .nav_bg {
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav_box {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px 20px;
+        }
+        .logo img {
+            height: 50px;
+        }
+        .menu {
+            display: flex;
+        }
+        .menu > ul {
+            display: flex;
+            list-style-type: none;
+        }
+        .menu > ul > li {
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .menu > ul > li:hover {
+            background-color: #f0f0f0;
+        }
+        .dropdown {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            display: block;
+            padding: 20px;
+            width: 100%;
+            opacity: 0;
+            height: 0;
+            transition: opacity 0.3s ease, height 0.3s ease;
+            overflow: hidden;
+        }
+        .dropdown.show {
+            opacity: 1;
+            height: auto;
+        }
+        .dropdown-content {
+            display: flex;
+            justify-content: space-between;
+        }
+        .dropdown-column {
+            flex: 1;
+            padding: 0 10px;
+        }
+        .dropdown-column > div {
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .dropdown ul {
+            list-style-type: none;
+        }
+        .dropdown ul li {
+            padding: 5px 0;
+        }
+        .dropdown ul li:hover {
+            background-color: #f0f0f0;
+        }
+        .Search_box {
+            display: flex;
+            align-items: center;
+        }
+        .Search_box input {
+            padding: 5px 10px;
+            margin-right: 5px;
+        }
+        .login button {
+            background-color: #e0001a;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav_bg">
+            <div class="nav_box">
+                <div class="logo">
+                    <img src="img/lotte_giants.png" alt="롯데 자이언츠 로고">
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>경기일정</li>
+                        <li>경기정보</li>
+                        <li>선수단</li>
+                        <li>이벤트</li>
+                        <li>미디어</li>
+                        <li>티켓</li>
+                        <li>기록실</li>
+                        <li>팬</li>
+                    </ul>
+                </div>
+                <div class="Search_box">
+                    <input type="text" placeholder="검색...">
+                    <span class="material-icons">search</span>
+                </div>
+                <div class="login">
+                    <button type="button">로그인</button>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-content">
+                        <div class="dropdown-column">
+                            <div>경기일정</div>
+                            <ul>
+                                <li>경기일정</li>
+                                <li>경기결과</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>경기정보</div>
+                            <ul>
+                                <li>남은경기</li>
+                                <li>이전경기</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>선수단</div>
+                            <ul>
+                                <li>감독</li>
+                                <li>스탭</li>
+                                <li>코치</li>
+                                <li>투수</li>
+                                <li>포수</li>
+                                <li>내야수</li>
+                                <li>외야수</li>
+                                <li>후보선수</li>
+                                <li>전체선수</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>이벤트</div>
+                            <ul>
+                                <li>EVENT</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>미디어</div>
+                            <ul>
+                                <li>자이언츠뉴스</li>
+                                <li>자이언츠 포토</li>
+                                <li>자이언츠 인스타그램</li>
+                                <li>자이언츠 유튜브</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>티켓</div>
+                            <ul>
+                                <li>티켓예매</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>기록실</div>
+                            <ul>
+                                <li>팀기록</li>
+                                <li>선수기록</li>
+                                <li>역대기록</li>
+                            </ul>
+                        </div>
+                        <div class="dropdown-column">
+                            <div>팬</div>
+                            <ul>
+                                <li>팬게시판</li>
+                                <li>응원단</li>
+                                <li>응원가</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menu = document.querySelector('.menu');
+            const dropdown = document.querySelector('.dropdown');
+            
+            menu.addEventListener('mouseenter', function() {
+                dropdown.classList.add('show');
+            });
+            
+            document.querySelector('.nav_box').addEventListener('mouseleave', function() {
+                dropdown.classList.remove('show');
+            });
+        });
+    </script>
+</body>
+</html>
